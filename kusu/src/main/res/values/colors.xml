@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#ffffff</color>
+    <color name="blockColor">#282828</color>
+    <color name="backgroundColor">#878787</color>
+    <color name="progressColor">#bb00ff</color>
+</resources>
