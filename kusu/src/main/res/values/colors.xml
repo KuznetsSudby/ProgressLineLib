@@ -4,4 +4,6 @@
     <color name="blockColor">#282828</color>
     <color name="backgroundColor">#878787</color>
     <color name="progressColor">#bb00ff</color>
+    <color name="currentColor">#dd81ff</color>
+    <color name="dividerColor">#FFF</color>
 </resources>

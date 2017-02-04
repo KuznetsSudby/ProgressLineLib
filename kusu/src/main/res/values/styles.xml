@@ -2,18 +2,18 @@
 <resources>
 
     <style name="block">
-        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/blockColor</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingBottom">2dp</item>
-        <item name="android:paddingTop">2dp</item>
-        <item name="android:paddingLeft">4dp</item>
-        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
     </style>
 
     <style name="text">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">10sp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/textColor</item>

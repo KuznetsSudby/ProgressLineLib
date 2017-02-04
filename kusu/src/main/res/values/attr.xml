@@ -6,22 +6,27 @@
             <enum name="timer" value="0"/>
             <enum name="step" value="1"/>
             <enum name="time_step" value="2"/>
-            <enum name="time_step_part" value="3"/>
-            <enum name="time_step_full" value="4"/>
         </attr>
 
         <attr name="time_max" format="integer"/>
         <attr name="step_max" format="integer"/>
         <attr name="time_red" format="integer"/>
 
-        <attr name="background" format="color"/>
-        <attr name="progress" format="color"/>
-        <attr name="divider" format="color"/>
-        <attr name="time_end" format="color"/>
+        <attr name="duration" format="integer"/>
+
+        <attr name="draw_time" format="boolean"/>
+        <attr name="draw_arrow" format="boolean"/>
+
+        <attr name="background_color" format="color"/>
+        <attr name="progress_color" format="color"/>
+        <attr name="current_color" format="color"/>
+        <attr name="divider_color" format="color"/>
+        <attr name="time_end_color" format="color"/>
 
         <attr name="divide_height" format="dimension"/>
 
         <attr name="step_visible" format="boolean"/>
+        <attr name="step_padding" format="dimension"/>
         <attr name="step_empty" format="reference"/>
         <attr name="step_good" format="reference"/>
         <attr name="step_bad" format="reference"/>

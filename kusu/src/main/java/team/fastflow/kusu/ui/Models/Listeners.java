@@ -35,11 +35,11 @@ public class Listeners {
 
     public void nextStep() {
         if (onStepChangeListener != null)
-            onStepChangeListener.changeStep(progressLine, progressLine.getState().getCurrentStep(), progressLine.getSettings().getMaxStep());
+            onStepChangeListener.changeStep(progressLine, progressLine.getState().getCurrentStep(), progressLine.getSettings().getStepMax());
     }
 
     public void nextTime() {
         if (timeChangeListener != null)
-            timeChangeListener.timeChange(progressLine, progressLine.getState().getCurrentTime(), progressLine.getSettings().getMaxTime());
+            timeChangeListener.timeChange(progressLine, progressLine.getState().getCurrentTime(), progressLine.getSettings().getTimeMax());
     }
 }

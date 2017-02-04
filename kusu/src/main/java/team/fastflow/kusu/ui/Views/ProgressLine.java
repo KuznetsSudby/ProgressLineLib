@@ -1,18 +1,12 @@
 package team.fastflow.kusu.ui.Views;
 
-import android.app.Activity;
 import android.content.Context;
+import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 
 import team.fastflow.kusu.R;
-import team.fastflow.kusu.ui.Listeners.OnStepChangeListener;
 import team.fastflow.kusu.ui.Models.Clock;
-import team.fastflow.kusu.ui.Models.Draw;
 import team.fastflow.kusu.ui.Models.Listeners;
 import team.fastflow.kusu.ui.Models.Logic;
 import team.fastflow.kusu.ui.Models.Settings;
@@ -22,14 +16,14 @@ import team.fastflow.kusu.ui.Models.State;
  * Created by KuSu on 26.01.2017.
  */
 
-public class ProgressLine extends FrameLayout{
+public class ProgressLine extends FrameLayout {
 
     private Listeners listeners;
     private Clock clock;
     private Logic logic;
     private Settings settings;
     private State state;
-    private Draw draw;
+    private Line line;
 
     public ProgressLine(Context context) {
         super(context);
@@ -42,16 +36,20 @@ public class ProgressLine extends FrameLayout{
     }
 
     private void initLayout(Context context, AttributeSet attrs) {
-        listeners = new Listeners(this);
-        draw = new Draw(this);
         settings = new Settings(context, attrs);
+        inflate(getContext(), settings.getLayout(), this);
+        listeners = new Listeners(this);
         state = new State();
         logic = new Logic(this);
         clock = new Clock(logic);
-
-        inflate(getContext(), R.layout.def_progress_line, this);
+        line = (Line) findViewById(R.id.progress);
+        line.setProgressLine(this);
 
         clock.startTime();
+    }
+
+    public void update() {
+        logic.invalidate();
     }
 
     public Listeners getListeners() {
@@ -63,21 +61,33 @@ public class ProgressLine extends FrameLayout{
     }
 
     public void nextStep() {
+        if (state.isEnd(settings.getStepMax()))
+            return;
         state.incCurrentStep();
         if (!settings.isStep())
-            state.clearCurrentTime();
+            if (!state.isEnd(settings.getStepMax()))
+                state.clearCurrentTime();
+        if (state.isEnd(settings.getStepMax()))
+            clock.stopTime();
         listeners.nextStep();
-        draw.drawProgress();
+        logic.invalidate();
+    }
+
+    public void nextStep(int result) {
+        if (state.isEnd(settings.getStepMax()))
+            return;
+        state.addResult(state.getCurrentStep(), result);
+        nextStep();
     }
 
     public Settings getSettings() {
         return settings;
     }
 
-    public void recreateType(int type){
+    public void recreateType(int type) {
         clock.stopTime();
         state.clear();
-        settings.changeType(type);
+        settings.setType(type);
         clock.startTime();
     }
 
@@ -85,12 +95,22 @@ public class ProgressLine extends FrameLayout{
         return state;
     }
 
-    public Draw getDraw() {
-        return draw;
+    public Line getLine() {
+        return line;
     }
 
-    //мигать, когда остается мало секунд --- atribute
-    //задавать основные цвета и размер текста через стили
+    @Override
+    public void draw(Canvas canvas) {
+        if (isInEditMode())
+            return;
+        super.draw(canvas);
+    }
 
+    public void pause(){
+        clock.pause();
+    }
 
+    public void resume(){
+        clock.resume();
+    }
 }
