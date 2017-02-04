@@ -35,4 +35,8 @@ allprojects {
     }
 }
 
+subprojects {
+    tasks.withType(Javadoc).all { enabled = false }
+}
+
 apply plugin: 'android-reporting'
