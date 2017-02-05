@@ -2,7 +2,7 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/team.fastflow.kusu/ui-progressline.svg)](https://oss.sonatype.org/content/repositories/releases/team/fastflow/kusu/ui-progressline/)
 
-<a href="https://play.google.com/store/apps/details?id=team.fastflow.kusu.ui.progressline">
+<a href="https://play.google.com/store/apps/details?id=team.fastflow.example.ui.progressline">
   <img alt="Get it on Google Play"
        src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
 </a>
