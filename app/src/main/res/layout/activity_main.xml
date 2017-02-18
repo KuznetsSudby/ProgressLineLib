@@ -9,12 +9,12 @@
     tools:context="team.fastflow.example.MainActivity">
 
 
-    <team.fastflow.kusu.ui.Views.ProgressLine
+    <kusu.ui.progressline.Views.ProgressLine
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_marginBottom="16dp"
         android:id="@+id/stepper"
-        pl:type="step"></team.fastflow.kusu.ui.Views.ProgressLine>
+        pl:type="step"></kusu.ui.progressline.Views.ProgressLine>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -36,13 +36,13 @@
             android:text="Bad result" />
     </LinearLayout>
 
-    <team.fastflow.kusu.ui.Views.ProgressLine
+    <kusu.ui.progressline.Views.ProgressLine
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         pl:type="timer" />
 
-    <team.fastflow.kusu.ui.Views.ProgressLine
+    <kusu.ui.progressline.Views.ProgressLine
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -54,7 +54,7 @@
         android:layout_marginBottom="16dp"
         android:text="Custom" />
 
-    <team.fastflow.kusu.ui.Views.ProgressLine
+    <kusu.ui.progressline.Views.ProgressLine
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

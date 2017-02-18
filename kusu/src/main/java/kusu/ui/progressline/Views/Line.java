@@ -1,4 +1,4 @@
-package team.fastflow.kusu.ui.Views;
+package kusu.ui.progressline.Views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import team.fastflow.kusu.ui.Models.Settings;
+import kusu.ui.progressline.Models.Settings;
 
 /**
  * Created by KuSu on 28.01.2017.

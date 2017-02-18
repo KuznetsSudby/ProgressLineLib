@@ -1,12 +1,12 @@
-package team.fastflow.kusu.ui.Models;
+package kusu.ui.progressline.Models;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 
-import team.fastflow.kusu.R;
-import team.fastflow.kusu.ui.Utils.Default;
+import kusu.ui.progressline.R;
+import kusu.ui.progressline.Utils.Default;
 
 /**
  * Created by KuSu on 28.01.2017.

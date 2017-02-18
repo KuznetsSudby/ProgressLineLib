@@ -1,4 +1,4 @@
-package team.fastflow.kusu.ui.Utils;
+package kusu.ui.progressline.Utils;
 
 /**
  * Created by KuSu on 02.02.2017.

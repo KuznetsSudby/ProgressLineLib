@@ -1,17 +1,16 @@
-package team.fastflow.kusu.ui.Models;
+package kusu.ui.progressline.Models;
 
 import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.app.Activity;
-import android.graphics.Color;
 import android.view.animation.Animation;
 import android.widget.TextView;
 
-import team.fastflow.kusu.R;
-import team.fastflow.kusu.ui.Listeners.TimerListener;
-import team.fastflow.kusu.ui.Utils.Utils;
-import team.fastflow.kusu.ui.Views.ProgressLine;
+import kusu.ui.progressline.R;
+import kusu.ui.progressline.Listeners.TimerListener;
+import kusu.ui.progressline.Utils.Utils;
+import kusu.ui.progressline.Views.ProgressLine;
 
 /**
  * Created by KuSu on 28.01.2017.

@@ -1,10 +1,7 @@
-package team.fastflow.kusu.ui.Utils;
+package kusu.ui.progressline.Utils;
 
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-
-import team.fastflow.kusu.R;
-import team.fastflow.kusu.ui.Models.Settings;
+import kusu.ui.progressline.R;
+import kusu.ui.progressline.Models.Settings;
 
 /**
  * Created by KuSu on 02.02.2017.

@@ -1,9 +1,7 @@
-package team.fastflow.kusu.ui.Models;
+package kusu.ui.progressline.Models;
 
 import java.util.Timer;
 import java.util.TimerTask;
-
-import team.fastflow.kusu.ui.Views.ProgressLine;
 
 /**
  * Created by KuSu on 28.01.2017.

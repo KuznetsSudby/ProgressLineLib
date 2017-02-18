@@ -1,4 +1,4 @@
-package team.fastflow.kusu.ui.Models;
+package kusu.ui.progressline.Models;
 
 import java.util.HashMap;
 

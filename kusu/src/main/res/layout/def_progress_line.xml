@@ -16,7 +16,7 @@
             style="@style/text" />
     </LinearLayout>
 
-    <team.fastflow.kusu.ui.Views.Line
+    <kusu.ui.progressline.Views.Line
         android:id="@+id/progress"
         android:layout_alignTop="@+id/firstBlock"
         android:layout_alignBottom="@+id/secondBlock"

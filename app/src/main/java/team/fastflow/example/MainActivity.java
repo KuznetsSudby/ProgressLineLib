@@ -4,8 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import team.fastflow.kusu.ui.Models.State;
-import team.fastflow.kusu.ui.Views.ProgressLine;
+import kusu.ui.progressline.Models.State;
+import kusu.ui.progressline.Views.ProgressLine;
 
 public class MainActivity extends AppCompatActivity {
 

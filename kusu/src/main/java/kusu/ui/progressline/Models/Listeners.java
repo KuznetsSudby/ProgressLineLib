@@ -1,8 +1,8 @@
-package team.fastflow.kusu.ui.Models;
+package kusu.ui.progressline.Models;
 
-import team.fastflow.kusu.ui.Listeners.OnStepChangeListener;
-import team.fastflow.kusu.ui.Listeners.TimeChangeListener;
-import team.fastflow.kusu.ui.Views.ProgressLine;
+import kusu.ui.progressline.Listeners.OnStepChangeListener;
+import kusu.ui.progressline.Listeners.TimeChangeListener;
+import kusu.ui.progressline.Views.ProgressLine;
 
 /**
  * Created by KuSu on 28.01.2017.

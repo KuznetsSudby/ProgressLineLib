@@ -1,6 +1,6 @@
-package team.fastflow.kusu.ui.Listeners;
+package kusu.ui.progressline.Listeners;
 
-import team.fastflow.kusu.ui.Views.ProgressLine;
+import kusu.ui.progressline.Views.ProgressLine;
 
 /**
  * Created by KuSu on 28.01.2017.

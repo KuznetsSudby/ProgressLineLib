@@ -1,16 +1,16 @@
-package team.fastflow.kusu.ui.Views;
+package kusu.ui.progressline.Views;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-import team.fastflow.kusu.R;
-import team.fastflow.kusu.ui.Models.Clock;
-import team.fastflow.kusu.ui.Models.Listeners;
-import team.fastflow.kusu.ui.Models.Logic;
-import team.fastflow.kusu.ui.Models.Settings;
-import team.fastflow.kusu.ui.Models.State;
+import kusu.ui.progressline.R;
+import kusu.ui.progressline.Models.Clock;
+import kusu.ui.progressline.Models.Listeners;
+import kusu.ui.progressline.Models.Logic;
+import kusu.ui.progressline.Models.Settings;
+import kusu.ui.progressline.Models.State;
 
 /**
  * Created by KuSu on 26.01.2017.
