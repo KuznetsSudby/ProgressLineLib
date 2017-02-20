@@ -17,14 +17,14 @@
 
 ```java
 dependencies {
-    compile 'team.fastflow.kusu:ui-progressline:1.0.0-BETA'
+    compile 'team.fastflow.kusu:ui-progressline:1.1.0-BETA'
 }
 ```
 
 в **xml**
 
 ```java
-<team.fastflow.kusu.ui.Views.ProgressLine
+<kusu.ui.progressline.Views.ProgressLine
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>
 ```
